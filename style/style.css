@@ -58,6 +58,9 @@ main h1 {
 main a:active {
   color: #f4d04e;
 }
+main a:hover {
+  color: #f4d04e;
+}
 main p:nth-child(5) {
   color: gray;
   margin-bottom: 20px;

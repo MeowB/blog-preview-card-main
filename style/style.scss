@@ -80,7 +80,10 @@ main {
 	a:active {
 		color: $c-yellow;
 	}
-
+	
+	a:hover {
+		color: $c-yellow;
+	}
 	// paragraph
 	p:nth-child(5) {
 		color: $c-grey;
