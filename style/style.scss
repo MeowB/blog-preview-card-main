@@ -1,0 +1,114 @@
+// FONT
+@font-face {
+	font-family: Figtree;
+	src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+// COLORS
+
+// primary
+$c-yellow: hsl(47, 88%, 63%);
+
+// neutral
+$c-white: hsl(0, 0%, 100%);
+$c-grey: hsl(0, 0%, 50%);
+$c-black: hsl(0, 0%, 7%);
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Figtree;
+	color: $c-black;
+}
+
+body {
+	background-color: $c-yellow;
+}
+
+main {
+	background-color: $c-white;
+	width: 90%;
+	margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	border-radius: 15px;
+	border: 1px solid $c-black;
+	box-shadow: 10px 10px 0px rgb(0 0 0 / 1);
+	max-width: 375px;
+
+	* {
+		margin: 5px 25px;
+	}
+
+	// illustration
+	img:first-child {
+		width: calc(90% - 11px);
+		margin: 25px;
+		border-radius: 15px;
+	}
+
+	// learning thingy
+	p:nth-child(2) {
+		background-color: $c-yellow;
+		width: 85px;
+		text-align: center;
+		font-weight: 800;
+		margin-bottom: 20px;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	// published date
+	p:nth-child(3) {
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	// title
+	h1 > a{
+		text-decoration: none;
+		margin: 0;
+		font-size: 32px;
+	}
+
+	h1 {
+		margin-bottom: 20px;
+	}
+
+	a:active {
+		color: $c-yellow;
+	}
+
+	// paragraph
+	p:nth-child(5) {
+		color: $c-grey;
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+
+	// name and profile picture
+	.name {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		img {
+			margin: 0;
+			width: 50px;
+			height: auto;
+		}
+
+		h2 {
+			font-size: 20px;
+			margin: 0 0 0 15px;
+		}
+	}
+
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}

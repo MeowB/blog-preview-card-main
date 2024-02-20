@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Figtree;
+  src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Figtree;
+  color: #121212;
+}
+
+body {
+  background-color: #f4d04e;
+}
+
+main {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  border: 1px solid #121212;
+  box-shadow: 10px 10px 0px black;
+  max-width: 375px;
+}
+main * {
+  margin: 5px 25px;
+}
+main img:first-child {
+  width: calc(90% - 11px);
+  margin: 25px;
+  border-radius: 15px;
+}
+main p:nth-child(2) {
+  background-color: #f4d04e;
+  width: 85px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+main p:nth-child(3) {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main h1 > a {
+  text-decoration: none;
+  margin: 0;
+  font-size: 32px;
+}
+main h1 {
+  margin-bottom: 20px;
+}
+main a:active {
+  color: #f4d04e;
+}
+main p:nth-child(5) {
+  color: gray;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+main .name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .name img {
+  margin: 0;
+  width: 50px;
+  height: auto;
+}
+main .name h2 {
+  font-size: 20px;
+  margin: 0 0 0 15px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
